@@ -1,0 +1,138 @@
+/* Import fonts styles from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+} 
+
+main {
+  background-color: #2F0C17;
+  overflow: hidden;
+  will-change: transform;
+  height: 100vh;
+  width: 100%;
+  transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
+}
+
+/* Clear floats after image containers */
+main::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.social-media {
+  float: right;
+  display: block;
+  /* position: fixed; */
+}
+
+/* Remove the dots for the social list */
+.social-media ul li {
+  list-style-type: none;
+}
+
+.social-media ul li > a {
+  padding-right: 20px;
+}
+
+.main-text ul {
+  padding-left: 45px;
+}
+
+.main-text h2 {
+  padding-top: 20px;
+  padding-left: 45px;
+  font-family: 'Shadows Into Light', cursive;
+  color: white;
+}
+
+.main-text ul li {
+  padding-top: 15px;
+  list-style-type: none;
+}
+
+.main-text ul li > a {
+  padding: 5px;
+  margin: 55px 1px; 
+  font-size: 30px;
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration: none;
+  color: white;
+}
+
+/* Everytime you place the mouse on any list option */
+.main-text ul li > a:hover {
+  text-decoration: none;
+  /* font-size: 32px; */
+  color: #A20201;
+}
+
+/* Place Rest on right side */
+.main-text{
+  float: left;
+  width: 33.33%;
+}
+
+/* Setting logo's size */
+.main-text img{
+  margin-top: 50px; 
+  margin-bottom: 50px; 
+  padding-left: 23px;
+  width: 85%;
+  height: 60%;
+}
+
+/* Placing photo on left */
+.main-image {
+  float: left;
+  width: 33.33%;
+}
+
+.menu-title img{
+  float: left;
+  margin-top: 50px; 
+  margin-bottom: 50px; 
+  padding-left: 23px;
+  width: 30%;
+  height: 25%;
+}
+
+.menu-title h1{
+  float: left;
+  width: 30%;
+  height: 25%;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 150px;
+  padding-left: 20%;
+  margin-top: 50px; 
+  margin-bottom: 50px; 
+  text-align: center;
+}
+
+.menu-title h1 > span{
+  color: #A20201;
+}
+
+.menu {
+  float: left;
+}
+
+.menu .food-food > div {
+  float: left;
+}
+
+section {
+  width: 100%;
+  background-color: #2F0C17;
+  height: 100vh;
+}
+
+section:nth-of-type(2n) {
+  background-color: #2F0C17;
+}
