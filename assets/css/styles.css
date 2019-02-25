@@ -28,7 +28,6 @@ main::after {
 .social-media {
   float: right;
   display: block;
-  /* position: fixed; */
 }
 
 /* Remove the dots for the social list */
@@ -45,7 +44,7 @@ main::after {
 }
 
 .main-text h2 {
-  padding-top: 20px;
+  padding-top: 40px;
   padding-left: 45px;
   font-family: 'Shadows Into Light', cursive;
   color: white;
@@ -93,46 +92,139 @@ main::after {
   width: 33.33%;
 }
 
-.menu-title img{
+.row {
+  display: grid;
+}
+
+.row .menu-header img{
   float: left;
-  margin-top: 50px; 
+  margin-top: 50px;
   margin-bottom: 50px; 
   padding-left: 23px;
   width: 30%;
-  height: 25%;
+  height: 45%;
 }
 
-.menu-title h1{
-  float: left;
-  width: 30%;
-  height: 25%;
+.menu-header .menu-title {
+  padding-left: 260px;
+  height: 30vh;
+  width: 80%;
+}
+
+.menu-header .menu-title > div {
+  display: inline;
   color: white;
+  list-style-type: none;
   font-family: 'Shadows Into Light', cursive;
-  font-size: 150px;
-  padding-left: 20%;
-  margin-top: 50px; 
-  margin-bottom: 50px; 
-  text-align: center;
+
 }
 
-.menu-title h1 > span{
+.menu-header .menu-title div > h1{
+  /* float: left; */
+  width: 25%;
+  height: 20%;
+  color: white;
+  list-style-type: none;
+  font-family: 'Shadows Into Light', cursive;
+  text-align: center !important;
+  font-size: 76px;
+  padding-left: 50%;
+  margin-top: 30px; 
+  margin-bottom: 50px; 
+}
+
+.menu-header h1 > span{
   color: #A20201;
 }
 
-.menu {
-  float: left;
+.menu-header .menu-title div > p{
+  /* float: left; */
+  color: white;
+  width: 100%;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 15px;
+  padding-top: 20px;
+  padding-left: 20%;
+  text-align: center;
 }
 
-.menu .food-food > div {
-  float: left;
+.row div > img {
+  width: 24.6%;
+  height: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.menu-description {
+  background-color: #2F0C17;
+  overflow: hidden;
+  will-change: transform;
+  height: 100vh;
+  width: 100%;
+  transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
+}
+
+/* Clear floats after image containers */
+.menu-description::after {
+  /* content: ""; */
+  /* clear: both; */
+  /* display: inline-block; */
+}
+
+.menu-description .list {
+  /* float: left;
+ */
+ display: inline-block;
+ width: 40%;
+ margin-bottom: 20px;
+}
+
+.menu-description .list > h2 {
+  color: #A20201;
+  width: 100%;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 55px;
+  /* padding-top: 20px; */
+  /* padding-left: 20%; */
+  text-align: center;
+
+}
+
+.menu-description .list ul > li {
+  color: white;
+  list-style-type: none;
+  width: 100%;
+  /* font-size: 5px; */
+  padding-top: 15px;
+  /* padding-left: 20%; */
+  /* text-align: center; */
+  /* margin-bottom: 20px; */
+
+}
+
+.menu-description .image {
+  display: inline;
+  width: 60%;
 }
 
 section {
   width: 100%;
   background-color: #2F0C17;
-  height: 100vh;
+  height: 150vh;
 }
 
-section:nth-of-type(2n) {
+.reservation {
   background-color: #2F0C17;
+  overflow: hidden;
+  will-change: transform;
+  height: 100vh;
+  width: 100%;
+  transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
+}
+
+/* Clear floats after image containers */
+.reservation::after {
+  content: "";
+  clear: both;
+  display: table;
 }
